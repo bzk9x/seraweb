@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERA Privacy Policy</title>
+    <meta name="description" content="SERA Products - Security frameworks for predatory intent detection">
+    <meta name="keywords" content="SERA 1, products, AI security framework">
+    <meta name="author" content="Tiwa & bzk9x">
+    
+    <title>Products - SERA</title>
+    <link rel="shortcut icon" href="../assets/sera_logo.svg" type="image/x-icon">
+    <link rel="canonical" href="https://sera.bzk9x.top/products/">
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+    </style>
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SERA</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="../">Home</a>
+                <a href="mailto:bzk9xx@gmail.com" class="talk-sales">Contact Sales</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="products-container">
+        <div class="products-header">
+            <a href="../" class="back-link">← Back</a>
+            <h1>Products</h1>
+        </div>
+
+        <div class="products-list">
+            <div class="product-card">
+                <div class="product-icon">
+                    <img src="../assets/sera_icon.svg" alt="SERA 1">
+                </div>
+                <div class="product-info">
+                    <h2>SERA 1</h2>
+                    
+                    <div class="product-description-wrapper">
+                        <p class="product-description" id="description">
+                            Sentiment Evaluation and Recursive Analysis (SERA) is a high-performance, Python-based AI security framework designed for the automated, real-time detection and risk assessment of online grooming and predatory intent, functioning as an explainable auditing engine that moves beyond simple binary "safe/unsafe" filters to provide a nuanced understanding of conversational threats. Built on the LLaMA 3.2 1B large language model (LLM), SERA achieves state-of-the-art performance with an F1 score of 0.99 in identifying predatory authors, outperforming both traditional machine learning approaches like SVMs and earlier larger models such as LLaMA 2 7B, while its lightweight architecture allows rapid processing of short conversational text on standard hardware. The system operates using a dual-tier methodology in which Tier 1 employs recursive sliding windows to analyze conversations in 10-message chunks, passing summaries and sentiment metadata from previous chunks to maintain conversational continuity, enabling detection of subtle shifts from positive friendship-building to high-risk exclusivity tones. Tier 2 applies a global harmfulness scoring system on a 0–100 scale using a fuzzy-theoretic framework to classify threats as moderate, significant, or severe, identifying strategies like isolation, flattery, or desensitization. To capture long-range dependencies and coded language that may only become suspicious when connected to earlier messages, SERA maintains a searchable Context Map of all previous chunks and uses backtranslation to uncover predatory intent hidden in slang, typos, or code-mixed language, ensuring resilience across multilingual and noisy text. Designed for enterprise and law enforcement use, it adheres to strict forensic standards and leverages explainable AI by automatically flagging suspicious keyphrases with comments so human moderators can understand the reasoning behind each score, while running entirely on-premise to securely preserve historical logs without transmitting sensitive data. In practice, SERA functions like an expert behavioral psychologist behind a one-way mirror in a chat room, keeping a detailed notebook of all prior conversation (the Context Map) to assess whether current friendly remarks are manipulative, continuously updating a "suspicion meter" with each message exchanged.
+                        </p>
+                        <div class="fade-overlay"></div>
+                    </div>
+                    
+                    <button class="read-more-btn" id="readMoreBtn">Read More</button>
+                    
+                    <a href="../" class="view-product-btn">View Product</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="../">Home</a>
+            <a href="../privacy/">Privacy</a>
+            <a href="../terms/">Terms</a>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Read More functionality
+        const readMoreBtn = document.getElementById('readMoreBtn');
+        const description = document.getElementById('description');
+        const descriptionWrapper = document.querySelector('.product-description-wrapper');
+        let isExpanded = false;
+
+        readMoreBtn.addEventListener('click', () => {
+            isExpanded = !isExpanded;
+            if (isExpanded) {
+                descriptionWrapper.classList.add('expanded');
+                readMoreBtn.textContent = 'Read Less';
+            } else {
+                descriptionWrapper.classList.remove('expanded');
+                readMoreBtn.textContent = 'Read More';
+            }
+        });
+    </script>
 </body>
+</html>
 </html>

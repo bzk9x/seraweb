@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SERA Privacy Policy - Data handling, storage, security, and user rights.">
+    <meta name="keywords" content="privacy policy, data protection, SERA security">
+    <meta name="author" content="Tiwa & bzk9x">
+    
+    <title>Privacy Policy - SERA</title>
+    <link rel="shortcut icon" href="../assets/sera_logo.svg" type="image/x-icon">
+    <link rel="canonical" href="https://sera.bzk9x.top/privacy/">
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SERA</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="../">Home</a>
+                <a href="mailto:bzk9xx@gmail.com" class="talk-sales">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="policy-container">
+        <div class="policy-content">
+            <a href="../" class="back-link">← Back</a>
+
+            <h1>SERA 1 Privacy Policy</h1>
+
+            <p><strong>Effective date:</strong> January 3, 2026</p>
+            <p><strong>Version:</strong> 1</p>
+
+            <p>This document defines how SERA 1 collects, processes, stores, secures, retains, and disposes of personal and conversational data. It is intended to describe the data lifecycle and the controls that SERA 1 applies or enables. This is a technical and contractual template and does not constitute legal advice. Parties should obtain independent legal review before relying on this document.</p>
+
+            <h2>1. Purpose and scope</h2>
+            <p>This policy applies to personal data and derived artifacts that SERA 1 receives, generates, or stores when deployed in enterprise environments. The policy covers data collection, ingestion, transformation, storage, access, retention, deletion, security, audit, and transfer. This policy does not prescribe operational investigative practices or instruct operators on product usage.</p>
+
+            <h2>2. Roles and responsibility for data</h2>
+            <h3>1. Provider responsibilities:</h3>
+            <p>The provider is responsible for the design, delivery, and secure maintenance of the SERA 1 software, for documenting technical characteristics relevant to data handling, and for implementing the technical controls described in this policy when those controls are included in the licensed software. The provider will not access client raw conversational data unless explicit, written agreement permits it and a Data Processing Agreement is in force.</p>
+
+            <h3>2. Client responsibilities:</h3>
+            <p>The client is the data controller for personal data ingested into SERA 1. The client is responsible for establishing and documenting the lawful basis for processing, for obtaining any required consents or legal authorizations, and for complying with applicable data subject rights. The client must use the technical controls provided by SERA 1 to meet legal obligations.</p>
+
+            <h3>3. Subprocessors and third parties:</h3>
+            <p>Any provider use of subprocessors for maintenance, updates, or support that involves client data requires prior written client authorization and a contract that imposes equivalent data protection obligations.</p>
+
+            <h2>3. Data types and sources</h2>
+            <h3>1. Ingested content:</h3>
+            <p>SERA 1 processes conversational text and related metadata that the client explicitly ingests. No external data collection occurs by default.</p>
+
+            <h3>2. Derived data:</h3>
+            <p>SERA 1 produces derived artifacts such as risk scores, context maps, behavioral indicators, and training labels. These derived artifacts are treated as data for the purposes of this policy.</p>
+
+            <h3>3. Hard negatives:</h3>
+            <p>Datasets labeled as hard negatives are lawful adult-to-adult materials used to evaluate or calibrate the model. Provenance, consent, and documentation for these datasets must be retained by the client.</p>
+
+            <h2>4. Collection and minimization</h2>
+            <h3>1. Minimal necessary principle:</h3>
+            <p>SERA 1 supports configuration to ingest only the data fields necessary for the stated, documented purpose. Default configurations favor minimized ingestion and storage.</p>
+
+            <h3>2. Provenance and documentation:</h3>
+            <p>For every dataset ingested for model evaluation or training, provenance metadata shall be recorded, including source, date of collection, lawful basis, and consent status where applicable.</p>
+
+            <h2>5. Storage and encryption</h2>
+            <h3>1. Local storage model:</h3>
+            <p>SERA 1 is designed to keep raw conversational data and derived artifacts on client-controlled infrastructure when deployed in on-premise or closed-network configurations. Any transfer to provider infrastructure requires explicit written agreement.</p>
+
+            <h3>2. Encryption at rest:</h3>
+            <p>All persisted data shall be encrypted at rest using industry-standard symmetric encryption. The client shall manage encryption keys unless a separate key management agreement assigns responsibility to the provider under explicit contractual terms.</p>
+
+            <h3>3. Encryption in transit:</h3>
+            <p>All network communications for administrative access, updates, and optional telemetry shall use strong transport encryption. Mutual authentication for administrative channels is required.</p>
+
+            <h3>4. Key management and access to decrypted data:</h3>
+            <p>Access to decrypted data is restricted to authorized processes and users. Key rotation, secure backup of keys, and documented procedures for emergency key recovery are required.</p>
+
+            <h2>6. Retention, archival, and deletion</h2>
+            <h3>1. Retention policy framework:</h3>
+            <p>SERA 1 provides configurable retention settings for raw data, derived artifacts, and audit logs. Default retention settings are conservative and require documented justification for any extended retention.</p>
+
+            <h3>2. Default retention windows:</h3>
+            <p>Unless a different lawful requirement applies and has been documented, audit logs shall be retained for at least six months and investigative context files for a period justified by law and documented in the record of processing activities.</p>
+
+            <h3>3. Archival and pseudonymization:</h3>
+            <p>For long-term retention, the system supports secure archival and irreversible pseudonymization of personal identifiers upon client instruction and where compliant with legal obligations.</p>
+
+            <h3>4. Deletion and legal holds:</h3>
+            <p>The system supports logical and physical deletion workflows. Legal holds must be documented and limited to the scope required by competent legal authorities. Deletion requests from data subjects must be executable by the client using provided tooling, subject to lawful exceptions and documented legal holds.</p>
+
+            <h2>7. Access control and authentication</h2>
+            <h3>1. Principle of least privilege:</h3>
+            <p>Role based access controls are enforced. Each human user or system process receives the minimal privileges required to perform their documented duties.</p>
+
+            <h3>2. Strong authentication:</h3>
+            <p>Administrative and moderator interfaces require multi-factor authentication and session controls that expire after inactivity.</p>
+
+            <h3>3. Privileged operations:</h3>
+            <p>Sensitive operations such as export, deletion, and configuration changes require separate authorization steps and are logged immutably.</p>
+
+            <h2>8. Auditability and logging</h2>
+            <h3>1. Immutable audit logs:</h3>
+            <p>The system generates tamper-evident audit logs for data ingestion, data access, human reviews, threshold or configuration changes, and export operations. Logs include actor identity, timestamp, action, and rationale when applicable.</p>
+
+            <h3>2. Log retention and access:</h3>
+            <p>Audit logs are retained for the configured retention period and are accessible only to authorized audit personnel and independence reviewers under controlled conditions.</p>
+
+            <h2>9. Security measures and integrity</h2>
+            <h3>1. Secure development lifecycle:</h3>
+            <p>Provider development follows secure development practices, includes code review and security testing, and avoids embedding hard-coded secrets in distributed artifacts.</p>
+
+            <h3>2. Anti-tampering:</h3>
+            <p>The software includes integrity verification mechanisms for code and configuration. These mechanisms protect against unauthorized modification without masking system behavior or evading lawful transparency.</p>
+
+            <h3>3. Host and network security:</h3>
+            <p>The client is responsible for host hardening, network segmentation, intrusion detection, and physical security. The provider documents recommended security baselines and hardening checks.</p>
+
+            <h2>10. Model transparency, explainability, and anti-evasion</h2>
+            <h3>1. Explainability artifacts:</h3>
+            <p>The provider supplies non-sensitive explanations of output factors and performance metrics so decisions using derived artifacts can be interpreted, audited, and contested. The provider will not publish operational trigger lists or configuration values that would materially increase risk of evasion.</p>
+
+            <h3>2. Anti-evasion trade-off:</h3>
+            <p>Security measures that limit disclosure of operational details are balanced with obligations for regulatory transparency and auditability. Any decision to withhold information for security reasons shall be documented and legally reviewed.</p>
+
+            <h2>11. Data subject rights and support tooling</h2>
+            <h3>1. Support for rights:</h3>
+            <p>The system provides tools to locate subject data, produce exports in standard formats, and effect rectification or deletion as directed by the client acting as controller. These tools are operational; legal determination required for whether a request is valid rests with the client.</p>
+
+            <h3>2. Documentation for client responses:</h3>
+            <p>The provider supplies API and administrative documentation to support timely client responses to data subject requests.</p>
+
+            <h2>12. Telemetry, support, and provider access</h2>
+            <h3>1. Telemetry by default:</h3>
+            <p>The software does not transmit raw conversational content to provider systems unless the client opts in explicitly. Telemetry, if enabled, is limited to diagnostic metadata and crash reports and excludes raw user data.</p>
+
+            <h3>2. Support access:</h3>
+            <p>Any remote support access that could expose client data requires explicit prior written consent, a scoped access window, and audit logging. Such access is governed by a Data Processing Agreement.</p>
+
+            <h2>13. Subprocessors and third-party components</h2>
+            <h3>1. Third-party components:</h3>
+            <p>The provider will maintain an inventory of third-party components and libraries used in SERA 1 and will disclose high-risk dependencies on request. Security updates for third-party components shall be applied as part of routine maintenance.</p>
+
+            <h3>2. Subprocessor engagement:</h3>
+            <p>Use of subprocessors that handle client data requires client approval, documented contracts with equivalent protections, and a public subprocessor list.</p>
+
+            <h2>14. Breach notification and incident response</h2>
+            <h3>1. Provider incident obligations:</h3>
+            <p>If a provider-controlled system experiences an incident with the potential to affect client data, the provider will notify the client promptly and provide forensic data necessary for client assessment.</p>
+
+            <h3>2. Client obligations:</h3>
+            <p>The client, as data controller, is responsible for regulatory breach notifications and for documenting the breach assessment and remedial actions. The provider will cooperate and provide logs and evidence subject to any lawful restrictions.</p>
+
+            <h2>15. Cross-border transfers and export controls</h2>
+            <h3>1. Transfers:</h3>
+            <p>Any transfer of personal data outside the jurisdiction where it was collected requires documented transfer mechanisms compliant with applicable law. Cross-border transfers for backups or support require prior client authorization.</p>
+
+            <h3>2. Export controls and lawful requests:</h3>
+            <p>The provider and the client will document procedures for responding to lawful requests for access to systems or data while protecting data subject rights and complying with applicable legal processes.</p>
+
+            <h2>16. Data used for model improvement</h2>
+            <h3>1. Local improvement only:</h3>
+            <p>By default, model improvement training using client data occurs only on client infrastructure with client authorization. Any use of client data for centralized model improvement requires separate, explicit contractual consent and lawful basis.</p>
+
+            <h3>2. Federated learning and aggregate telemetry:</h3>
+            <p>If federated learning or aggregate model telemetry is implemented in the future, mechanisms will ensure that no raw personal data leaves client infrastructure and that updates are differentially private and non-identifying.</p>
+
+            <h2>17. Records and assessments</h2>
+            <h3>1. Record of processing activities:</h3>
+            <p>The system generates and exports records to support client maintenance of a record of processing activities.</p>
+
+            <h3>2. Impact assessments:</h3>
+            <p>The provider supplies technical input for Data Protection Impact Assessments and for equivalent fundamental-rights impact assessments. The client remains responsible for conducting and filing such assessments where required.</p>
+
+            <h2>18. Limitations and liability</h2>
+            <h3>1. No guarantee of legal compliance:</h3>
+            <p>Technical controls cannot ensure legal compliance in all jurisdictions or under all factual circumstances. Compliance determinations and lawful authorizations are the responsibility of the client.</p>
+
+            <h3>2. Provider warranties:</h3>
+            <p>The provider warrants that the software implements the data handling mechanisms described in this policy, is delivered free from intentionally malicious code, and will maintain security measures in line with reasonable industry practices. Contractual terms will set limitations and allocation of liability.</p>
+
+            <h2>19. Amendments and governance</h2>
+            <p>This policy will be updated as laws, standards, and technical capability evolve. Material changes to data handling practices will be documented and communicated to clients. The provider and client will coordinate to ensure that contractual terms reflect any material changes.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="../">Home</a>
+            <a href="../terms/">Terms</a>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

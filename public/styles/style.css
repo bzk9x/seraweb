@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "Plumpelo";
+    src: url(../assets/PLUMPELOV2REGULAR.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans Mono', monospace;
+    background-color: white;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: "Plumpelo";
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    transition: none;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    padding: 8px;
+    background: none;
+    border: none;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 2.5px;
+    background-color: #333333;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    transform-origin: center;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(10.5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10.5px);
+}
+
+.hero {
+    padding: 80px 40px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.product-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    background-color: #f5f5f5;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.product-description {
+    padding: 0 0 40px 0;
+}
+
+.coming-soon {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.product-description h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.description {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.credits {
+    font-size: 12px;
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+.cta-button {
+    background-color: #333333;
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    font-size: 14px;
+    font-family: 'Noto Sans Mono', monospace;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    opacity: 0.8;
+}
+
+.cta-button:active {
+    opacity: 0.6;
+}
+
+.footer {
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-links {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 12px;
+    transition: none;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-container {
+        padding: 0 20px;
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #f9f9f9;
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 24px 20px;
+        gap: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .hero {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .product-image img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .product-description {
+        padding: 0;
+    }
+
+    .product-description h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .price {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .coming-soon {
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+
+    .credits {
+        font-size: 11px;
+        margin-bottom: 25px;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 30px 20px;
+    }
+}
